@@ -28,6 +28,10 @@ class MyHandler extends DefaultHandler {
      */
     private String tagName;
 
+    public List<Doc> getList() {
+        return list;
+    }
+
     public String getTagName() {
         return tagName;
     }
@@ -83,7 +87,5 @@ class MyHandler extends DefaultHandler {
     public void error(SAXParseException e) throws SAXException {
     }
 
-    public List<Doc> getList() {
-        return list;
-    }
+
 }
