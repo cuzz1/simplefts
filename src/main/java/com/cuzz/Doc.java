@@ -41,4 +41,15 @@ public class Doc {
     public void setText(String text) {
         this.text = text;
     }
+
+    @Override
+    public String toString() {
+        return "Doc{" +
+                "id=" + id +
+                ", url='" + url + '\'' +
+                ", title='" + title + '\'' +
+                ", text='" + text + '\'' +
+                '}';
+    }
+
 }
