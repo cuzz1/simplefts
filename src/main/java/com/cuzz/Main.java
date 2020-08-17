@@ -92,7 +92,14 @@ public class Main {
         return res;
     }
 
+    /**
+     * 把多个list合并成一个
+     * @param l1
+     * @param l2
+     * @return
+     */
     private List<Integer> intersect(List<Integer> l1, List<Integer> l2) {
+        // go 版本作者取得是两个list长度更长的那个，我觉得取更短的那个就可以。
         int minLen = l1.size();
         if (l1.size() > l2.size()) {
             minLen = l2.size();
